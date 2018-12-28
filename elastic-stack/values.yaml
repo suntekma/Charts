@@ -102,7 +102,7 @@ nginx-ldapauth-proxy:
     ldapBindPassword: "870+eeBgA[-JR01~xB*l1nZ*"
 
 elasticsearch-curator:
-  enabled: true
+  enabled: false
   config:
     elasticsearch:
       hosts:
