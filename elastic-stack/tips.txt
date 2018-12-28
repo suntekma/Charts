@@ -1,0 +1,4 @@
+ nginx-ingress 注入 annotate
+ kubectl annotate pods --overwrite nginx-ingress-controller-76c484b769-n62rp -n kube-system fluentbit.io/parser=ingress
+elasticsearch-curator 只保留7天数据
+helm install stable/elasticsearch-curator --name elasticsearch-curator --namespaces monitoring --set config.elasticsearch.hosts elasticsearch-efk-cluster
