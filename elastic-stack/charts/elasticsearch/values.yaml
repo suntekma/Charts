@@ -100,7 +100,7 @@ master:
     enabled: true
     accessMode: ReadWriteOnce
     name: data
-    size: "20Gi"
+    size: "4Gi"
     # storageClass: "ssd"
   antiAffinity: "soft"
   nodeAffinity: {}
@@ -133,7 +133,7 @@ data:
     enabled: true
     accessMode: ReadWriteOnce
     name: data
-    size: "300Gi"
+    size: "30Gi"
     # storageClass: "ssd"
   terminationGracePeriodSeconds: 3600
   antiAffinity: "soft"

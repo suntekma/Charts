@@ -1,27 +1,8 @@
 apiVersion: v1
 entries:
-  elastic-stack:
-  - apiVersion: v1
-    appVersion: "6"
-    created: 2018-12-29T03:22:58.560459032+08:00
-    description: A Helm chart for ELK
-    digest: 5a8274a665683a8eb97817ac0f4e215edadbd63d942b3e21301763a88cf79ea6
-    home: https://www.elastic.co/products
-    icon: https://www.elastic.co/assets/bltb35193323e8f1770/logo-elastic-stack-lt.svg
-    maintainers:
-    - email: pete.brown@powerhrg.com
-      name: rendhalver
-    - email: jrodgers@powerhrg.com
-      name: jar361
-    - email: christian.roggia@gmail.com
-      name: christian-roggia
-    name: elastic-stack
-    urls:
-    - elastic-stack-1.1.0.tgz
-    version: 1.1.0
   mariadb-cluster:
   - appVersion: 10.2.14
-    created: 2018-12-29T03:22:58.561632659+08:00
+    created: 2018-12-29T03:58:53.506100217+08:00
     description: Chart to create a Highly available MariaDB cluster
     digest: 8381f3fabd15f21cd429677e678feec1ada68db5995b78a05d23e1f76e8da7dc
     engine: gotpl
@@ -46,11 +27,11 @@ entries:
   my-app:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-12-29T03:22:58.562052629+08:00
+    created: 2018-12-29T03:58:53.506547255+08:00
     description: A Helm chart for Kubernetes
     digest: 857b76bfcbe45c3fa01c6d3f822da03469f31c55f42b3a10bb31bcae2121db92
     name: my-app
     urls:
     - my-app-0.1.0.tgz
     version: 0.1.0
-generated: 2018-12-29T03:22:58.552262503+08:00
+generated: 2018-12-29T03:58:53.504660094+08:00
