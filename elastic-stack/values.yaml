@@ -18,8 +18,8 @@ kibana:
     reset: true
     # Use <plugin_name,version,url> to add/upgrade plugin
     values:
-        - elastalert-kibana-plugin,1.0.1,https://github.com/bitsensor/elastalert-kibana-plugin/releases/download/1.0.1/elastalert-kibana-plugin-1.0.1-6.4.2.zip
-        - curator,1.0.0,https://git.newegg.org/sm14/docker-helm-kubectl/raw/master/curator-1.0.0.zip
+      # - elastalert-kibana-plugin,1.0.1,https://github.com/bitsensor/elastalert-kibana-plugin/releases/download/1.0.1/elastalert-kibana-plugin-1.0.1-6.4.2.zip
+        - curator,1.0.0,https://github.com/suntekma/Charts/raw/master/elastic-stack/charts/kibana/plugin/curator-1.0.0.zip
       # - logtrail,0.1.30,https://github.com/sivasamyk/logtrail/releases/download/v0.1.30/logtrail-6.4.2-0.1.30.zip
       # - other_plugin      
 logstash:
@@ -135,3 +135,5 @@ elasticsearch:
       requests:
         cpu: "25m"
         memory: "1536Mi"
+  cluster:
+    xpackEnable: true
