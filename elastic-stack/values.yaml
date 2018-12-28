@@ -11,6 +11,15 @@ kibana:
       requests:
         cpu: 100m
         memory: 300Mi
+  dashboardImport:
+    timeout: 60
+    xpackauth:
+      enabled: true
+      username: myuser
+      password: mypass
+    dashboards: {}
+        k8s: https://raw.githubusercontent.com/monotek/kibana-dashboards/master/k8s-fluentd-elasticsearch.json
+
   plugins:
     # set to true to enable plugins installation
     enabled: true
