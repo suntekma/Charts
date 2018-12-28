@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "elastic-stack.fullname" . }}
+  labels:
+    app: {{ template "elastic-stack.name" . }}
+    chart: {{ template "elastic-stack.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "elastic-stack.name" . }}
+    release: {{ .Release.Name }}
