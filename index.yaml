@@ -1,11 +1,19 @@
 apiVersion: v1
 entries:
+  catalog:
+  - created: 2018-12-29T10:27:40.424726183+08:00
+    description: service-catalog API server and controller-manager helm chart
+    digest: e39b87e017f1ea635200bffe098f6110fc5013a20f924526f20e585611b7d56c
+    name: catalog
+    urls:
+    - catalog-0.1.38.tgz
+    version: 0.1.38
   elastic-stack:
   - apiVersion: v1
     appVersion: "6"
-    created: 2018-12-29T04:15:55.707276578+08:00
+    created: 2018-12-29T10:27:40.432375385+08:00
     description: A Helm chart for ELK
-    digest: 91aa11bc7a90813cacc1cbc8ae978e876b7c08217d30c71b5b138adc990f6bd7
+    digest: fcbbe9f55f20dbc08e807c0a82259fba0a1fe4ea43c6120018896ba4fbb91b87
     home: https://www.elastic.co/products
     icon: https://www.elastic.co/assets/bltb35193323e8f1770/logo-elastic-stack-lt.svg
     maintainers:
@@ -19,9 +27,35 @@ entries:
     urls:
     - elastic-stack-1.1.0.tgz
     version: 1.1.0
+  kubeapps:
+  - apiVersion: v1
+    appVersion: v1.1.0
+    created: 2018-12-29T10:27:40.435464503+08:00
+    description: Kubeapps is a dashboard for your Kubernetes cluster that makes it
+      easy to deploy and manage applications in your cluster using Helm
+    digest: b84bf0090f3d1a560bcbaabc39b119426afadfdcfa9088708994cf8e8a983585
+    home: https://kubeapps.com
+    icon: https://raw.githubusercontent.com/kubeapps/kubeapps/master/docs/img/logo.png
+    keywords:
+    - helm
+    - dashboard
+    - service catalog
+    - deployment
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: adnan@bitnami.com
+      name: prydonius
+    name: kubeapps
+    sources:
+    - https://github.com/kubeapps/kubeapps
+    tillerVersion: '>=2.10.0'
+    urls:
+    - kubeapps-1.2.0.tgz
+    version: 1.2.0
   mariadb-cluster:
   - appVersion: 10.2.14
-    created: 2018-12-29T04:15:55.708576934+08:00
+    created: 2018-12-29T10:27:40.436609906+08:00
     description: Chart to create a Highly available MariaDB cluster
     digest: 8381f3fabd15f21cd429677e678feec1ada68db5995b78a05d23e1f76e8da7dc
     engine: gotpl
@@ -43,14 +77,38 @@ entries:
     urls:
     - mariadb-cluster-1.0.1.tgz
     version: 1.0.1
+  monocular:
+  - apiVersion: v1
+    appVersion: v1.2.0
+    created: 2018-12-29T10:27:40.439191715+08:00
+    description: Monocular is a search and discovery front end for Helm Charts Repositories.
+    digest: b97db767a511ba08997ac02e4c84ef8ba3655acb7aea55ffed58774e189eeaaa
+    home: https://github.com/helm/monocular
+    maintainers:
+    - email: adnan@bitnami.com
+      name: prydonius
+    name: monocular
+    sources:
+    - https://github.com/helm/monocular
+    urls:
+    - monocular-1.2.6.tgz
+    version: 1.2.6
   my-app:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-12-29T04:15:55.709002836+08:00
+    created: 2018-12-29T10:27:40.440401894+08:00
     description: A Helm chart for Kubernetes
     digest: 857b76bfcbe45c3fa01c6d3f822da03469f31c55f42b3a10bb31bcae2121db92
     name: my-app
     urls:
     - my-app-0.1.0.tgz
     version: 0.1.0
-generated: 2018-12-29T04:15:55.596779879+08:00
+  ups-broker:
+  - created: 2018-12-29T10:27:40.44094951+08:00
+    description: user-provided service-broker deployment Helm chart.
+    digest: 74bf80d4b38860ab010da19741ba2d2817a44cad87f87688cc6253563cb8bcb7
+    name: ups-broker
+    urls:
+    - ups-broker-0.0.1.tgz
+    version: 0.0.1
+generated: 2018-12-29T10:27:40.423653435+08:00
