@@ -29,7 +29,7 @@ kibana:
     values:
       # - elastalert-kibana-plugin,1.0.1,https://github.com/bitsensor/elastalert-kibana-plugin/releases/download/1.0.1/elastalert-kibana-plugin-1.0.1-6.4.2.zip
         - curator,1.0.0,https://github.com/suntekma/Charts/raw/master/elastic-stack/charts/kibana/plugin/curator-1.0.0.zip
-        - X-Pack,6.2.4,https://artifacts.elastic.co/downloads/packs/x-pack/x-pack-6.2.4.zip
+      # - X-Pack,6.2.4,https://artifacts.elastic.co/downloads/packs/x-pack/x-pack-6.2.4.zip
       # - logtrail,0.1.30,https://github.com/sivasamyk/logtrail/releases/download/v0.1.30/logtrail-6.4.2-0.1.30.zip
       # - other_plugin      
 logstash:
